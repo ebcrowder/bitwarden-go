@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/VictorNine/bitwarden-go/internal/auth"
-	bw "github.com/VictorNine/bitwarden-go/internal/common"
+	"github.com/ebcrowder/bitwarden-go/internal/auth"
+	bw "github.com/ebcrowder/bitwarden-go/internal/common"
 )
 
 type APIHandler struct {
