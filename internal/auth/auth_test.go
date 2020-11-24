@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ebcrowder/bitwarden-go/internal/database/mock"
+	"github.com/ebcrowder/bitwarden-go/internal/db/mock"
 )
 
 func TestHandleLogin(t *testing.T) {

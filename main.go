@@ -8,7 +8,7 @@ import (
 	"github.com/ebcrowder/bitwarden-go/internal/api"
 	"github.com/ebcrowder/bitwarden-go/internal/auth"
 	"github.com/ebcrowder/bitwarden-go/internal/common"
-	"github.com/ebcrowder/bitwarden-go/internal/database/sqlite"
+	"github.com/ebcrowder/bitwarden-go/internal/db/postgres"
 )
 
 var cfg struct {
@@ -34,10 +34,9 @@ func init() {
 }
 
 func main() {
-	db := &sqlite.DB{}
+	db := &postgres.DB{}
 	flag.Parse()
 
-	db.SetDir(cfg.location)
 	err := db.Open()
 	if err != nil {
 		log.Fatal(err)
