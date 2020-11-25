@@ -37,6 +37,8 @@ func main() {
 	db := &postgres.DB{}
 	flag.Parse()
 
+	// TODO init connStr somehow
+
 	err := db.Open()
 	if err != nil {
 		log.Fatal(err)
